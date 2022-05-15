@@ -41,7 +41,7 @@ class CustomerRepositoryTest {
     }
 
     @Test
-    void itNotShouldSelectCustomerByPhoneNumberWhenNumberDoesNotExists() {
+    void itShouldNotSelectCustomerByPhoneNumberWhenNumberDoesNotExists() {
         // Given
         String phoneNumber = "0000";
 
@@ -79,7 +79,7 @@ class CustomerRepositoryTest {
 
         // When
         // Then
-        assertThatThrownBy(() -> underTest.save(customer))
+       assertThatThrownBy(() -> underTest.save(customer))
                 .hasMessageContaining("not-null property references a null or transient value : com.selftaugh.testing.customer.Customer.name")
                 .isInstanceOf(DataIntegrityViolationException.class);
 
