@@ -1,4 +1,4 @@
-package com.selftaugh.testing.stripe;
+package com.selftaugh.testing.payment.stripe;
 
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;

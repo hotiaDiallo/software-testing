@@ -1,4 +1,4 @@
-package com.selftaugh.testing.stripe;
+package com.selftaugh.testing.payment.stripe;
 
 import com.selftaugh.testing.payment.CardPaymentCharge;
 import com.selftaugh.testing.payment.Currency;
